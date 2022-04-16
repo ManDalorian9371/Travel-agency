@@ -225,7 +225,7 @@ section .container {
 /* User-feedbacks */
 /* User-feedbacks */
 .User-feedbacks {
-	padding: 100px 0;
+	padding: 100px 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -239,7 +239,7 @@ section .container {
 	margin-top: 30px;
 }
 .user-review p {
-	padding: 10px 10px 10px 100px;
+	padding: 10px 10px 10px 75px;
 }
 .user-review p::before {
 	content: '\201d';
@@ -249,7 +249,7 @@ section .container {
 	color: #6495ed;
 	font-family: sans-serif;
 	bottom: -73px;
-	left: 176px;
+	left: 166px;
 }
 .col-md-4 {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 100, 0.2);
@@ -278,14 +278,35 @@ section .container {
 	background-image: linear-gradient(#2d557d, #9610fb);
 	color: #fff;
 }
+.footer .col-md-3 {
+	margin: 30px 0;
+}
 .footer-logo {
 	width: 150px;
-	margin: 15px 0;
+	margin: 0 0 40px 0;
 }
 .logo-footer-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.social-footer-container {
+	list-style: none;
+	text-align: center;
+}
+.social-footer-container h4 {
+	text-align: center;
+}
+.social-footer-container ul {
+	display: flex;
+	list-style: none;
+	padding: 0 0 0 10px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+.social-footer-container ul li {
+	margin-right: 15px;
 }
 .footer .row {
 	display: flex;
@@ -294,18 +315,16 @@ section .container {
 }
 .Features-footer-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 .footer h4 {
 	min-width: 130px;
-	margin: 0 30px;
-	text-align: left;
-	transform: translateY(-10%);
+	margin: 20px 5px 0 0;
 }
 .footer p {
 	font-size: 12px;
 	min-width: 100px;
-	text-align: center;
-	margin: 0px 10px 0 0;
+	margin: 10px 10px 0 0px;
 }
