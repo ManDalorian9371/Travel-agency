@@ -1,0 +1,228 @@
+* {
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'bad script', sans-serif;
+	overflow: hidden;
+}
+h2 {
+	font-family: 'jua';
+	font-size: 3em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+h3 {
+	font-family: 'jua';
+	font-size: 2em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.text p {
+	font-size: 1.5em;
+	margin: 20px 0;
+	max-width: 700px;
+}
+.text a {
+	font-family: 'jua';
+	display: inline-block;
+	font-size: 1.5em;
+	font-weight: bold;
+	background-color: rgb(0, 0, 0, 0.08);
+	padding: 10px 30px;
+	text-decoration: none;
+	margin-top: 10px;
+	color: antiquewhite;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: background-color 0.4s ease-in, transform 0.4s ease-in, color 1.8s ease;
+	border: 0;
+	border-radius: 40px;
+}
+.text a:hover {
+	transform: scale(1.04);
+	color: rgb(252, 203, 112);
+	background-color: rgb(0, 0, 0, 0.5);
+}
+.text a:focus {
+	background-color: rgb(0, 0, 0, 0.9);
+}
+.showCase {
+	position: absolute;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #111;
+	color: white;
+	z-index: 2;
+}
+.showCase header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 40px 100px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+.toggle {
+	font-size: 28px;
+	color: white;
+	padding-top: 8px;
+	padding-bottom: 100px;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: color 0.4s ease, transform 0.7s ease-out;
+}
+.toggle:hover {
+	transform: translateX(-200px);
+	transform: scale(1.1) translateY(-1px);
+	color: orange;
+}
+.logo {
+	font-size: 34px;
+	font-family: 'jua';
+	text-transform: uppercase;
+}
+
+.toggle.active {
+}
+.showCase video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.9;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #03a9f4;
+	opacity: 0.6;
+	mix-blend-mode: overlay;
+}
+
+.text {
+	position: relative;
+	z-index: 10;
+}
+
+.social {
+	position: absolute;
+	bottom: 40px;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social li i {
+	padding: 10px 15px;
+	cursor: pointer;
+	transform: scale(1.5);
+	transition: color 0.4s ease, transform 0.7s ease-out;
+}
+
+.social li i:hover {
+	transform: scale(1.55) translateY(-5px);
+	color: orange;
+}
+section.menu {
+	position: absolute;
+	width: 150px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-decoration: none;
+	transition: color 0.4s ease, transform 0.7s ease, background-color 0.4s ease-in;
+	background-color: rgb(6, 5, 5, 0.0);
+}
+section.menu section.menuItems {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100vh;
+	transform: translateX(200px);
+	transition: color 0.4s ease, transform 0.7s ease;
+}
+section.menu section.menuItems.active {
+	transform: translateX(0);
+	transition: color 0.4s ease, transform 0.7s ease, background-color 0.4s ease-in;
+}
+section.menu.active {
+	text-decoration: none;
+	padding-top: 50px;
+	color: white;
+	background-color: rgb(6, 5, 5, 0.6);
+	transition: color 0.4s ease, transform 0.7s ease, background-color 0.4s ease-in;
+}
+section.menu a {
+	text-decoration: none;
+	padding: 10px 0;
+	color: white;
+	transition: color 0.4s ease, transform 0.7s ease-out;
+}
+section.menu a:hover {
+	color: orange;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 791px) {
+	.showCase,
+	.showCase header {
+		padding: 40px;
+	}
+	.text h2 {
+		font-size: 2.5em;
+	}
+	.text h3 {
+		font-size: 1.2em;
+	}
+	.text p {
+		font-size: 1em;
+	}
+	.text a {
+		font-size: 1em;
+	}
+	.showCase header h2 {
+		font-size: 1.5em;
+	}
+	.showCase header i {
+		font-size: 20px;
+	}
+	.social li i {
+		padding: 10px 15px;
+		cursor: pointer;
+		transform: scale(1.2);
+		transition: color 0.4s ease, transform 0.7s ease-out;
+	}
+
+	.social li i:hover {
+		transform: scale(1.25) translateY(-5px);
+		color: orange;
+	}
+}
