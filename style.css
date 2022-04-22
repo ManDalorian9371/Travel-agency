@@ -123,6 +123,10 @@ h3 {
 	position: relative;
 	z-index: 10;
 }
+.social li a {
+	color: inherit;
+	text-decoration: inherit; /* no underline */
+}
 
 .social {
 	position: absolute;
@@ -137,7 +141,7 @@ h3 {
 	padding: 10px 15px;
 	cursor: pointer;
 	transform: scale(1.5);
-	transition: color 0.4s ease, transform 0.7s ease-out;
+	transition: color 0.4s ease, transform 0.4s ease-out;
 }
 
 .social li i:hover {
