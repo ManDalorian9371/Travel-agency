@@ -47,7 +47,10 @@ body {
 .header p {
 	margin: 18px 0;
 }
-section .container {
+.header .container img {
+	padding-top: 20px;
+	background-image: linear-gradient(rgb(255, 255, 255), rgb(74, 175, 253));
+	border-radius: 2rem;
 }
 .header img {
 	float: left;
